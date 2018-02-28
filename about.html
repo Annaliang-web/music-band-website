@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"><!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"><!--Google font-->
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>About - Coldplay Vancouver Fan Site</title>
+    <script>
+        $(document).ready(function() {
+            $('.btn1').click(function () {
+                $('#span1').show('slow'); 
+            }); 
+            $('.btn2').click(function () {
+                $('#span2').show('slow'); 
+            });   
+    });
+    </script>
+
+  </head>
+  
+  <body>
+    <div class="container">
+            <nav class="customBar navbar">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand brand" href="index.html">Coldplay Fan</a>
+                      </div>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="red"><a href="index.html">Home</a></li>
+                        <li class="active green"><a href="about.html">About</a></li>
+                        <li class="orange"><a href="bio.html">Biography</a></li>
+                        <li class="blue"><a href="http://coldplay.com/" target="_blank">Coldplay Official</a></li>
+                      </ul>
+                    </div>
+            </nav>
+
+         
+        <div class="row about">
+            <h2>Author's profile</h2>
+                           
+                            <div class="profilePic row col-xs-12 col-md-12 col-lg-12">
+                                <img class="img-rounded" src="anna.jpg"/>
+                            </div>
+                            <div class="profile row col-xs-12 col-md-12 col-lg-12">
+                                    <ul>
+                                        <li>Name: Anna Liang</li>
+                                        <li>Phone:<span id="span1"> 604 123 4567</span><button class="btn1 btn btn-link">show</button></li>
+                                        <li>Email:<span id="span2"> annaliang@branstation.io</span><button class="btn2 btn btn-link">show</button></li>
+                                        <li>Bio: Coding coding coding...</li>
+                                    </ul>
+                            </div>
+                            
+                        
+        </div>
+          
+    <div class="borderTop"></div>
+    <div class="row footer">
+            <ul class="col-xs-6 col-md-6 col-lg-6">
+              <li>Sources:</li>
+              <li><a href="https://www.straight.com/blogra/803561/coldplay-plays-bc-place-september-29-2017">Coldplay photo</a></li>
+              <li><a href="http://coldplay.com/">Album photos</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">Wikipedia</a></li>
+            </ul> 
+            <p class="col-xs-6 col-md-6 col-lg-6">2017 All Right Reserved ©</p> 
+          </div>
+
+  </body>
+</html>

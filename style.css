@@ -1,0 +1,176 @@
+
+/* Brainstation - Assignment 1 HTML & CSS    Fall 2017  */
+body,html{
+    height: 100%;
+  }
+  body,.container{
+   font-family: 'Raleway', sans-serif;
+   color: #F5F0F0;
+   background-image: url('bg.jpg'); 
+   background-position: center; /*bg-position repeat attachment size enbale bg image fully covering*/
+   background-repeat:  no-repeat;
+   background-attachment: fixed;
+   background-size:  cover;
+   background-color: #51555A;
+  }
+ 
+/******** Nav bar */
+nav.customBar{
+    background-color: #000;
+}
+ a.brand{ 
+   font-family: 'EB Garamond', serif;
+   font-size: 2em;
+   color: #F5F0F0;
+   -webkit-font-smoothing: antialiased;
+ }
+ a.brand:hover{
+   color: #e88300 !important;
+ }
+ a.brand:visited{
+    font-family: 'Droid Serif', serif;
+    font-size: 2em;
+    color: #F5F0F0;
+    -webkit-font-smoothing: antialiased;
+ }
+ nav ul li.red a:visited{
+     color: #EB4556;
+ }
+ nav ul li.green a:visited{
+    color: #84B442;
+}
+nav ul li.orange a:visited{
+    color: #e88300;
+}
+nav ul li.blue a:visited{
+    color: #4747AA;
+}
+
+
+/********* Home page*/
+div.band{
+    text-align:center;
+    margin-bottom: 5%;
+}
+ div.band img{
+   max-width: 100%;
+  margin: 3%;
+  height: auto;
+}
+.news, .albums{
+    margin-bottom: 7%;
+}
+.news h3, .albums h3{
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+a{    /*remove underline from all links*/
+    text-decoration: none;
+  }  
+
+div.centerAlbums{
+    text-align: center;
+}
+div.albums a img{ /*these css keep the photos responsive in different sizes of screens*/
+    max-width: 100%;
+    height: auto;
+}
+
+.jump a img /*hover jump up effect w/ jQuery*/
+{
+    position: relative;
+}
+
+
+
+/********* BIO PAGE */
+div.bio div h3{
+    color: #5858CA;
+}
+div.bio div p a, div.bio div p a:visited{
+    color: #F5F0F0;   
+    text-decoration: none; 
+}
+div.bio div p a:hover{
+    color: #e88300;
+}
+div.bioBorder{
+    border: 5px solid;
+    border-color:#EB4556 #84B442 #e88300 #4747AA;
+    border-radius: 18px;
+ }
+ div.bioBorder img{
+    max-width: 100%;
+    height: auto;
+ }
+.comments{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.leave{
+    color: #EB4556;
+    font-size: 1.7em;
+ }
+ div.comments textarea{
+    color: #000;
+}
+button#submit{
+    float: right;
+    background-color: #e88300;
+} 
+.posted{
+    margin-bottom: 6%;
+}
+
+
+/********* About PAGE */
+div.about{
+    margin-bottom:10%;
+}
+div.about h2{
+    text-align: center;
+}
+div.profilePic{
+    text-align: center;
+}
+div.profilePic img{
+    width: 150px; 
+    display:inline;
+}
+.profile{
+    text-align: center;
+}
+.profile ul li{
+    list-style: none;
+}
+.profile ul li span{
+    display: none;
+}
+.profile ul li button{
+    color: #e88300;
+}
+/********* FOOTER */
+div.borderTop{
+    border-top: 2px #5858CA solid;
+    text-align: center;
+}
+
+div.footer ul.credits a:hover{
+    color: #e88300;
+}  
+div.footer ul li{
+    list-style: none;
+    display: inline;
+    margin: 1%;
+}
+div.footer ul li a{
+    text-decoration: none;
+    color: #F5F0F0;
+}
+div.footer ul li a:visited{
+    color: #F5F0F0;
+}
+.footer p{
+    text-align: right;
+}
+

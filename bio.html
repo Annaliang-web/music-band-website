@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"><!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"><!--Google font-->
+    <!--jQuery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>  
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+          $('#submit').click(function () { //posts comments
+            var comments = $('textarea').val();
+            $('.posted div ul').append('<li>' + comments + '</li>'); 
+             });   
+        });
+  
+      </script>
+    <title>Coldplay Vancouver Fan Site</title>
+  </head>
+  
+  <body>
+        <div class="container">
+            <nav class="navbar customBar">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand brand" href="index.html">Coldplay Fan</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="red"><a href="index.html">Home</a></li>
+                    <li class="green"><a href="about.html">About</a></li>
+                    <li class="active orange"><a href="bio.html">Biography</a></li>
+                    <li class="purple"><a href="http://coldplay.com/" target="_blank">Coldplay Official</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+            <div class="row bio">
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                        <h3>Biography</h3>    
+                        <p>Coldplay are a British rock band formed in 1996 by lead vocalist and keyboardist Chris Martin and
+                        lead guitarist Jonny Buckland at University College London (UCL).
+                        After they formed under the name Pectoralz, Guy Berryman joined the group as bassist and they changed their name to Starfish.
+                        Will Champion joined as drummer and backing vocalist, completing the lineup. The band renamed themselves "Coldplay" in 1998,
+                        before recording and releasing three EPs: "Safety" in 1998 and "Brothers &amp; Sisters" and "The Blue Room" in 1999.
+                        </p>
+                        <p>Coldplay achieved worldwide fame with the release of the single <a href="https://www.youtube.com/watch?v=yKNxeF4KMsY" target="_blank">"Yellow"</a> in 2000.
+                        Followed to the second album "A Rush of Blood to the Head" in 2002, their bestselling album <a href="">"X&amp;Y"</a> received mostly positive reviews,
+                        though some critics felt it was inferior to its predecessor. Their fourth studio album, <a href="">"Viva la Vida or Death and All His Friends"</a> (2008),
+                        released to largely positive reviews, earning several Grammy Award nominations and wins at the 51st Grammy Awards.
+                        In October 2011, Coldplay released their fifth studio album, "Mylo Xyloto", which topped the charts in over 34 countries and was the UK's best-selling rock album of 2011,
+                        but received mixed reviews.
+                        </p>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-6"><!--Bio photo-->
+                    <div style="margin-bottom: 12%;"></div>
+                    <div class="bioBorder well">
+                        <img src="coldplay2.jpg" alt="Colplay" width="500" height="270">                  
+                    </div>  
+                </div>
+            </div>    
+           
+            <div class="row comments"><!--input .val() append()-->
+                <div class="col-xs-8 col-md-8 col-lg-8 form-group">
+                    <label class="leave" for="comment">Leave a comment:</label>
+                        <textarea class="form-control" name="" rows="5"></textarea>
+                        <br><button type="button" id="submit" class="btn">Submit</button>     
+                               
+                </div>
+            </div>
+
+            <div class="row posted">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h3>Comments:</h3>
+                    <ul>
+                        <!--wating append() to post list items in here-->
+                        <li>The consert in Vancouver was amazing! - Jen</li>
+                        <li>The new album is five-star!! - Ben</li>
+                    </ul>    
+                </div>    
+            </div>
+
+            <div class="borderTop"></div>
+            <div class="row footer">
+                    <ul class="col-xs-6 col-md-6 col-lg-6">
+                      <li>Sources:</li>
+                      <li><a href="https://www.straight.com/blogra/803561/coldplay-plays-bc-place-september-29-2017">Coldplay photo</a></li>
+                      <li><a href="http://coldplay.com/">Album photos</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">Wikipedia</a></li>
+                    </ul> 
+                    <p class="col-xs-6 col-md-6 col-lg-6">2017 All Right Reserved ©</p> 
+            </div>
+    </div>
+    
+  </body>
+</html>

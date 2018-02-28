@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"><!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"><!--Google font-->
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){ //hover jump up effect
+          $(".jump a img").css({ opacity: 1 });
+          $(".jump a img").hover(
+                  function () {
+                                  $(this).animate({ top: "-15" });
+                                  $(this).css({ opacity: 0.6 });
+                  }, 
+                  function () {
+                                  $(this).animate({ top: "0" });
+                                  $(this).css({ opacity: 1 });
+                  }
+              ); //hover jump up effect ends
+          $('figure a img#news1').mouseover(function () {
+                    $('figure a img#news1').animate({
+                      width: '300px',
+                      height: '300px',
+                    });
+                  });
+          $('figure a img#news1').mouseout(function () {
+                    $('figure a img#news1').animate({
+                      width: '250px',
+                      height: '250px',       
+                    });
+                  });
+
+          $('figure a img#news2').mouseover(function () {
+                  $('figure a img#news2').animate({
+                    width: '300px',
+                    height: '300px',
+                  });
+                });
+          $('figure a img#news2').mouseout(function () {
+                $('figure a img#news2').animate({
+                  width: '250px',
+                  height: '250px',       
+                });
+              });                  
+          });                   
+    </script>
+    <title>Coldplay Vancouver Fan Site</title>
+  </head>
+  
+  <body>
+    <div class="container">
+        <nav class="navbar customBar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand brand" href="index.html">Coldplay Fan</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active red"><a href="index.html">Home</a></li>
+              <li class="green"><a href="about.html">About</a></li>
+              <li class="orange"><a href="bio.html">Biography</a></li>
+              <li class="blue"><a href="http://coldplay.com/" target="_blank">Coldplay Official</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="row band col-xs-12 col-md-12 col-lg-12"><!--Photos-->
+          <h2>Coldplay</h2><!--Heading-->
+          <img src="coldplay1.jpg" class="img-fluid" alt="A coldplay photo" width="640" height="407">
+        </div>
+            
+        <div class="row news"> <!--News-->
+          <h3>News</h3>
+              <div class="col-xs-5 col-md-5 col-lg-5">
+                <figure> <!--image with captions-->
+                  <a href="https://www.amazon.ca/A-Head-Full-Of-Dreams/dp/B017IS0HY0?tag=smarturl-ca-20" target="_blank">
+                      <img id= "news1" src="news_dreams.png" class="img-responsive center-block" alt="A Head Full of Dreams album" width="250" height="250">
+                  </a>
+                  <figcaption class="figure-caption text-center">A Head Full of Dreams</figcaption>
+                </figure>
+              </div>
+              
+              <div class="col-xs-2 col-md-2 col-lg-2"></div>
+              
+              <div class="col-xs-5 col-md-5 col-lg-5">
+                <figure >
+                  <a href="http://coldplay.com/watch-chriss-r1-live-lounge-performance/" target="_blank">
+                     <img id="news2" src="news_live.png" class="img-responsive center-block" alt="BBC live" width="250" height="250"></a>
+                  <figcaption class="figure-caption text-center">BBC live</figcaption>
+                </figure>
+              </div>
+        </div>
+          
+        <div class="row albums"><!--Albums-->
+            <h3>Popular Albums</h3>
+            <div class="centerAlbums"><!--this div is for center the entire album line-->
+                <div class= "albums col-xs-4 col-md-4 col-lg-4 jump">
+                  <a href="http://coldplay.com/release/xy/" target="_blank">
+                    <img src="xy.jpg" class="img-fluid hoverAlbums" alt="album of X & Y " width="300" height="200"></a>
+                </div>
+                <!--use jQuery collapse sections-->
+                <div class= "albums col-xs-4 col-md-4 col-lg-4 jump">
+                  <a href="http://coldplay.com/release/viva-la-vida-or-death-and-all-his-friends/" target="_blank">
+                    <img src="viva.jpg" class="img-fluid hoverAlbums" alt="album of Viva La Vida" width="300" height="200"></a>
+                </div>    
+                <div class= "albums col-xs-4 col-md-4 col-lg-4 jump">
+                  <a href="http://coldplay.com/release/mylo-xyloto/" target="_blank">
+                    <img src="mylo.jpg" class="img-fluid hoverAlbums" alt="album of Mylo Xyloto" width="300" height="200"></a>
+                </div>    
+            </div>    
+        </div>
+
+        <div class="borderTop"></div>
+      <div class="row footer">
+      <ul class="col-xs-6 col-md-6 col-lg-6">
+        <li>Sources:</li>
+        <li><a href="https://www.straight.com/blogra/803561/coldplay-plays-bc-place-september-29-2017">Coldplay photo</a></li>
+        <li><a href="http://coldplay.com/">Album photos</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">Wikipedia</a></li>
+      </ul> 
+      <p class="col-xs-6 col-md-6 col-lg-6">2017 All Right Reserved ©</p> 
+    </div>
+
+  </div>  
+  </body>
+</html>
